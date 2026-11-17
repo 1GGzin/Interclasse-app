@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interclasse</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <!-- "so-logado" e "so-organizador" aparecem conforme o usuário (veja atualizarMenu em app.js) -->
+  <header class="topo">
+    <strong>Interclasse</strong>
+    <nav>
+      <a href="#/jogos" class="so-logado">Jogos</a>
+      <a href="#/times" class="so-logado">Times</a>
+      <a href="#/gerenciar" class="so-organizador">Gerenciar</a>
+    </nav>
+    <span class="conta so-logado">
+      <span id="nome-usuario"></span>
+      <button class="botao pequeno claro" data-envia="POST /sair" data-sessao>Sair</button>
+    </span>
+  </header>
+
+  <main id="app"></main>
+  <div id="aviso" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
